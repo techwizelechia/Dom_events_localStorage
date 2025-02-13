@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dom.css">
+    <title>Dom manipulation, Events and Local storage </title>
+
+</head>
+<body>
+<!--Learning on Document Object Model  -->
+
+<!-- changing text content -->
+        <p id="demo">My lady?<p>
+        <button type="submit" id="btn" onclick="changeText()">Click me</button>
+
+<!-- Modify styles dynamically to change background and text color -->
+<div style="width: 300px; color: rgb(248, 4, 4); background-color: yellow; text-align: center; height: 200px;" id="divEl">Style me</div>
+<button type="submit" onclick="changeBackColor()">Change background color</button>
+<button type="submit" onclick="changeTextColor()">change text color</button>
+
+<!-- Create and remove elements , add and remove elements dynamically from a list-->
+<form action="">
+    <input type="text" name="text" id="itemInput" placeholder="Enter item">
+</form>
+<button type="submit" onclick="addItem()">Add item</button>
+<ul id="itemList"></ul>
+
+<!-- Keyboard event handling show real time inputs as the user types -->
+<input type="text" id="nameInput" placeholder="Type your name">
+<p>Your name: <span id="displayName"></span></p>
+
+
+<script src="Dom.js"></script>
+</body>
+</html>
